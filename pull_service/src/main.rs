@@ -1,7 +1,8 @@
+use config::ServiceConfiguration;
+
 mod config;
-use config::Serviceconfiguration;
-use std::env;
+mod error;
 
 fn main() {
-    let configuration: ServiceConfiguration = get_config();
+    let configuration: ServiceConfiguration = ServiceConfiguration();
 }

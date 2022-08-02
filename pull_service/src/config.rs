@@ -1,7 +1,8 @@
-use std::path::PathBuf;
+use crate::error::Result;
+use serde::Deserialize;
+use std::{env, path::PathBuf};
 
-pub fn read_config_from_config_file() -> ServiceConfiguration {}
-
+#[derive(Deserialize)]
 pub struct ServiceConfiguration {
     db_connection: String,
     file_save_path: String,
@@ -11,6 +12,7 @@ pub struct ServiceConfiguration {
     tt_configuration: TTRequestConfiguration,
 }
 
+#[derive(Deserialize)]
 pub struct TTRequestConfiguration {
     scheme: String,
     host: String,
@@ -18,6 +20,7 @@ pub struct TTRequestConfiguration {
     query: TTRequestQuery,
 }
 
+#[derive(Deserialize)]
 pub struct TTRequestQuery {
     aid: u8,
     app_language: String,
@@ -52,22 +55,28 @@ pub struct TTRequestQuery {
     signature: String,
 }
 
-impl ServiceConfiguraiton {
-    pub fn parse_from_file() -> Self {
-        let path = construct_configuraiton_path();
-
-        Self {}
+impl ServiceConfiguration {
+    pub async fn parse_from_file() -> Result<Self> {
+        let path = Self::construct_configuration_path();
+        let file_content = Self::read_configuration_file_content(path).await?;
+        let config: ServiceConfiguration = toml::from_str(&file_content)?;
+        Ok(config)
     }
-}
 
-pub fn construct_configuraiton_path() -> PathBuf {
-    let path: PathBuf = PathBuf::new();
-    let current_dir = env::current_dir().expect("Failed to get current dir");
-    let current_dir = current_dir.to_str().unwrap();
-    path.push(current_dir);
-    let config_file = "config";
-    path.push(config_file);
-    path.set_extension("toml");
+    pub fn construct_configuration_path() -> PathBuf {
+        let path: PathBuf = PathBuf::new();
+        let current_dir = env::current_dir().expect("Failed to get current dir");
+        let current_dir = current_dir.to_str().unwrap();
+        path.push(current_dir);
+        let config_file = "config";
+        path.push(config_file);
+        path.set_extension("toml");
 
-    path
+        path
+    }
+
+    async fn read_configuration_file_content(path_buf: PathBuf) -> Result<String> {
+        let file_content = tokio::fs::read_to_string(path_buf).await?;
+        Ok(file_content)
+    }
 }

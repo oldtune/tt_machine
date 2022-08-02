@@ -1,0 +1,13 @@
+c:\Users\do.tran.STS\Desktop\tt_machine\pull_service\target\debug\deps\toml-df7956cdb0b386d8.rmeta: C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\lib.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\map.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\value.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\datetime.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\ser.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\de.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\tokens.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\macros.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\spanned.rs
+
+c:\Users\do.tran.STS\Desktop\tt_machine\pull_service\target\debug\deps\toml-df7956cdb0b386d8.d: C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\lib.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\map.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\value.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\datetime.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\ser.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\de.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\tokens.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\macros.rs C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\spanned.rs
+
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\lib.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\map.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\value.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\datetime.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\ser.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\de.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\tokens.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\macros.rs:
+C:\Users\do.tran.STS\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.9\src\spanned.rs:
